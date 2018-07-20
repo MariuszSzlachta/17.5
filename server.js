@@ -1,12 +1,10 @@
 var express = require('express');
 var app = express();
 
-app.use((function(req, res, next){
-  if (req.path === '/store') {
-    console.log('Jestem pośrednikiem w żądaniu do /store')
-  }
+app.use('/store', function(req, res, next){
+  console.log('Jestem pośrednikiem w żądaniu do /store')
   next();
-}))
+})
 
 app.get('/', function(req, res){
   res.send('Hello World');
