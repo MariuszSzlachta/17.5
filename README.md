@@ -1,5 +1,5 @@
 
-# Sudoku
+# Express endpoints
 
 ## What's this?
 This is my first implementation of endpoints in Express and custom middleware. This exercise was done during Web Developer Bootcamp and helped me to understand enpoints concept and role of middleware.
